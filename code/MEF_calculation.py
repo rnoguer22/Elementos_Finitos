@@ -11,9 +11,9 @@ from numpy import linalg
 from compute_eigenvector import*
 from determinant import*
 from eigenvalues import*
-from code.transpose import*
+from transpose import*
 from print_paraview import*
-from code.transpose import*
+from transpose import*
 from determinant import*
 from kloc_tet import*
 
@@ -415,7 +415,7 @@ def calculate_FEM (steps, disp_vert, label_test):
                 v_print_stress_0.append(stress_FEM[j][p])
 
         
-        print_paraview_micro_stra_stre_disp  (v_print_elements_0, v_print_strains_0, v_print_stress_0, v_print_displacement_0, label_test, stepi)
+        print_paraview_micro_stra_stre_disp (v_print_elements_0, v_print_strains_0, v_print_stress_0, v_print_displacement_0, label_test, stepi)
 
     print('end of step')
     print('Time',time()-timestart)

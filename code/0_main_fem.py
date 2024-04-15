@@ -1,5 +1,5 @@
 
-from code.MEF_calculation import calculate_FEM
+from MEF_calculation import calculate_FEM
 
 
 ############## PARAMETERS ################
